@@ -1,0 +1,6 @@
+apiVersion: apps/v1
+kind: "Deployment"
+metadata:
+  name: "mycluster-enterprise-metrics-admin-api"
+  annotations:
+    com.example.custom: "business-unit-1"

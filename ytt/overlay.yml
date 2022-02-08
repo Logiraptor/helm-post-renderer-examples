@@ -1,0 +1,8 @@
+#@ load("@ytt:overlay", "overlay")
+
+#@overlay/match by=overlay.subset({"kind": "Deployment", "metadata": {"name":"mycluster-enterprise-metrics-admin-api"} })
+---
+metadata:
+  annotations:
+    #@overlay/match missing_ok=True
+    com.example.custom: "business-unit-1"
